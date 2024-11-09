@@ -256,4 +256,42 @@ nav {
 
 .input__group {
     position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.5rem;
+    border: 1px solid var(--text-light);
+    border-radius: 5px;
+    background-color: #f6f4f7;
+    font-size: 1rem;
+}
+
+/* Style for the dropdown to match the search input */
+#categoryDropdown {
+    appearance: none; /* Hides default dropdown arrow */
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1rem;
+    font-family: inherit;
+    padding: 0.5rem;
+    color: var(--text-dark);
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Dropdown arrow icon styling */
+#categoryDropdown + .ri-arrow-drop-down-line {
+    font-size: 1.5rem;
+    color: var(--text-dark);
+}
+
+/* Input field styling to match dropdown */
+#searchInput {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1rem;
+    width: 100%;
+    font-family: inherit;
 }
