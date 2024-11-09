@@ -229,3 +229,31 @@ nav {
         width: fit-content;
     }
 }
+
+.suggestions {
+    position: absolute;
+    top: 00%;
+    left: 1000;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid var(--text-light);
+    border-radius: 5px;
+    z-index: 10;
+    display: none;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.suggestions p {
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.suggestions p:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.input__group {
+    position: relative;
+}

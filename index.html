@@ -60,11 +60,19 @@
                 <div class="input__row">
                     <div class="input__group">
                         <span><i class="ri-search-line"></i></span>
-                        <input type="text" placeholder="Search for course">
+                        <input type="text" id="searchInput" placeholder="Search for course" autocomplete="off">
+                        <div id="searchSuggestions" class="suggestions"></div>
                     </div>
-                    <div class="input__group"></div>
-                    <span><i class="ri-arrow-drop-down-line"></i></span>
-                    <input type="text" placeholder="Categories">
+                    <div class="input__group"><span><i class="ri-arrow-drop-down-line"></i></span>
+                        <select id="categoryDropdown">
+                            <option value="" disabled selected>Categories</option>
+                            <option value="Technology">Technology</option>
+                            <option value="Business">Business</option>
+                            <option value="Arts">Arts</option>
+                            <option value="Science">Science</option>
+                            <option value="Languages">Languages</option>
+                        </select>
+                    </div>
                 </div>
                 <button type="submit">Search Now</button>
             </form>
